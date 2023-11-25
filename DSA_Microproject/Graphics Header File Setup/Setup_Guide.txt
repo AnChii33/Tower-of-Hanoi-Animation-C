@@ -1,0 +1,35 @@
+Instruction for graphics file setup for Dev-Cpp
+***************************************************************************************************
+
+1) Copy "graphics.h" and "winbgim.h" files to "include" folder of Dev-Cpp directory.
+   Default location for Dev-Cpp is ("C:\Program Files (x86)\Embarcadero\Dev-Cpp\TDM-GCC-64\include")
+
+2) Copy "libbgi.a" to file to "lib" folder of Dev-Cpp directory.
+   Default location is ("C:\Program Files (x86)\Embarcadero\Dev-Cpp\TDM-GCC-64\lib")
+
+3) Open Dev-Cpp and go to (Tools > Compiler Options)
+
+4) a) From the drop down menu for "Compiler set to configure", select the "32-bit Release" version.
+   b) Just below in the General tab, check the option for "Add the following commands when calling the linker" if previously unchecked.
+   c) Clear the text field under the checkButton, copy the following text and paste in there: 
+	-static-libgcc -lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32
+
+5) Click "OK", and restart Dev-Cpp
+
+Done...
+
+NOTE:
+1) The graphics.h will work only in the program saved in ".cpp" format.
+
+// Test program for graphics file setup check
+
+#include<graphics.h>
+int main()
+{
+    int gd=DETECT,gm;
+    initgraph(&gd,&gm,"");
+    circle(200,200,100);
+    getch();
+}
+
+// ---------------------------------------------------
