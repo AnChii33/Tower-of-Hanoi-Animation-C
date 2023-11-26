@@ -11,14 +11,14 @@
 #define HEIGHT 40			// height of a disk
 
 int COLORS[10] = {2, 5, 7, 8, 9, 10, 11, 12, 13, 14};		// supported color for disks
-int pass = 0;												// number of passes
+int pass = 0;							// number of passes
 
 // pole structure
 struct pole {
 	char label;
 	int stack[MAX];			// disks on the pole
-	int top;				// (number of poles on the disk) - 1
-	int x0;					// (left x-coordinate of the pole base to draw)
+	int top;			// (number of disks on the pole) - 1
+	int x0;				// (left x-coordinate of the pole base)
 } A, B, C;
 
 // move a disk to a pole
@@ -91,7 +91,7 @@ void drawpole(struct pole x) {
 
 // show the move number, the source pole of top disk and its destination pole as text on screen
 void showmove(struct pole x1, struct pole x2) {
-	setcolor(WHITE);
+    setcolor(WHITE);
     settextstyle(10, 0, 6);
     char move1[30] = "MOVE ";
     char move2[5];
@@ -136,10 +136,10 @@ void animator() {
 	char disks2[20] = " DISKS";
 	while (1) {
 		printf("\nHow many disks you wish to animate for?: ");
-    	scanf("%d", &ndisks);
-    	if ((ndisks<=0) || (ndisks>10))
-    		printf("Invalid input!...");
-    	else break;
+    		scanf("%d", &ndisks);
+    		if ((ndisks<=0) || (ndisks>10))
+    			printf("Invalid input!...");
+    		else break;
 	}
     sprintf(disks1, "%d", ndisks);
     strcat(disks1, disks2);
