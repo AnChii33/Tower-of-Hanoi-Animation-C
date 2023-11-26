@@ -3,7 +3,7 @@ Animation of Tower of Hanoi program, using graphics.h library in C programming l
 
 # Setup
 - IDE used: Dev-Cpp (Embarcaredo)
-- for required files check the [graphics_folder](DSA_Microproject/Graphics Header File Setup)
+- for required files check the [graphics_folder](readme.md)
 - please read the [setup_guide](DSA_Microproject/Graphics Header File Setup/Setup_Guide.txt) to setup your system to use graphics.h without any problems
 - Code is written in C programming language. However it has been saved as a cpp file for the graphics support
 
