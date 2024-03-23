@@ -9,9 +9,3 @@ Animation of Tower of Hanoi program, using graphics.h library in C programming l
 
 # Credits
 - [``Anurag Chattopadhyay``](github.com/AnChii33)
-- ``Sristinil Biswas``
-- ``Krishnendu Chatterjee``
-- ``Utsav Chatterjee``
-- ``Aayush Chowdhury``
-- ``Kushal Das``
-- ``Patatree Das``
