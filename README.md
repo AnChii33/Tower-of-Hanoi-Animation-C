@@ -8,7 +8,7 @@ Animation of Tower of Hanoi program, using graphics.h library in C programming l
 - Code is written in C programming language. However it has been saved as a cpp file for the graphics support
 
 # Credits
-- ``[Anurag Chattopadhyay](https://github.com/AnChii33/)``
+- [Anurag Chattopadhyay](https://github.com/AnChii33/)
 - ``Sristinil Biswas``
 - ``Krishnendu Chatterjee``
 - ``Utsav Chatterjee``
